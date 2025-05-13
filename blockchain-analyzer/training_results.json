@@ -1,0 +1,88 @@
+{
+    "dataset_statistics": {
+        "total_transactions": 203768,
+        "labeled_transactions": 46564,
+        "unlabeled_transactions": 157204,
+        "fraud_transactions": 4545,
+        "legitimate_transactions": 42019,
+        "total_edges": 234355,
+        "feature_count": 166
+    },
+    "classification_results": {
+        "RandomForest": {
+            "metrics": {
+                "accuracy": 0.9861130994989262,
+                "precision": 0.9862946747018398,
+                "recall": 0.9861130994989262,
+                "f1": 0.9856529790480518,
+                "train_accuracy": 1.0,
+                "train_precision": 1.0,
+                "train_recall": 1.0,
+                "train_f1": 1.0,
+                "training_time": 148.96883034706116
+            },
+            "confusion_matrix": [
+                [
+                    12585,
+                    2
+                ],
+                [
+                    192,
+                    1191
+                ]
+            ]
+        },
+        "RandomForest_Large": {
+            "metrics": {
+                "accuracy": 0.986184681460272,
+                "precision": 0.9863502052603174,
+                "recall": 0.986184681460272,
+                "f1": 0.985734749705797,
+                "train_accuracy": 1.0,
+                "train_precision": 1.0,
+                "train_recall": 1.0,
+                "train_f1": 1.0,
+                "training_time": 282.02709579467773
+            },
+            "confusion_matrix": [
+                [
+                    12584,
+                    3
+                ],
+                [
+                    190,
+                    1193
+                ]
+            ]
+        }
+    },
+    "anomaly_results": {
+        "IsolationForest": {
+            "metrics": {
+                "silhouette_score": 0.42141108167308156,
+                "calinski_harabasz_score": 2570.65477450368,
+                "anomaly_ratio": 0.10000237987577049,
+                "timestamp": "2025-05-13T01:41:32.247864",
+                "model_name": "anomaly_detection"
+            }
+        },
+        "OneClassSVM": {
+            "metrics": {
+                "silhouette_score": 0.4623697195467561,
+                "calinski_harabasz_score": 1731.85368680763,
+                "anomaly_ratio": 0.09983578857183655,
+                "timestamp": "2025-05-13T01:43:04.066208",
+                "model_name": "anomaly_detection"
+            }
+        },
+        "LocalOutlierFactor": {
+            "metrics": {
+                "silhouette_score": 0.10293135332627036,
+                "calinski_harabasz_score": 40.10850576000087,
+                "anomaly_ratio": 0.10000237987577049,
+                "timestamp": "2025-05-13T01:43:28.404061",
+                "model_name": "anomaly_detection"
+            }
+        }
+    }
+}
